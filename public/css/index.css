@@ -1,0 +1,142 @@
+body{
+    font-family: Poppins, sans-serif;
+}
+
+.site-wrapper{
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.form-wrapper{
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+    border-top: 5px solid cornflowerblue;
+}
+
+.post-img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.success-alert{
+    margin-top: 10px;
+}
+
+.btn{
+    margin: 2px;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    transition: 0.5s;
+    margin: 20px;
+    border: none;
+}
+
+.card .circle{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    clip-path: circle(200px at center 0);
+    text-align: center;
+    border: none;
+}
+
+.card .circle img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+
+}
+
+.card .content{
+    position: relative;
+    text-align: center;
+    align-content: center;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.card .circle .content p{
+    color: rebeccapurple;
+}
+
+.card .content a{
+    position: absolute;
+    display: inline-block;
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid gainsboro;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: 500;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    width: 8rem;
+}
+
+.card .content a:hover{
+    background: #cbd5e0;
+}
+
+
+.single-post{
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 15px;
+    border-radius: 0 20px 0 20px;
+    border-top: 5px solid cornflowerblue;
+}
+
+.post-img-section{
+    position: relative;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 0 0 0 20px;
+    overflow: hidden;
+}
+
+.post-img-section img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.post-content{
+    height: auto;
+    width: auto;
+    padding: 15px;
+    text-align: justify;
+}
+
+
+
+
+@media screen and (min-width: 480px){
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        align-self: center;
+
+    }
+
+}
